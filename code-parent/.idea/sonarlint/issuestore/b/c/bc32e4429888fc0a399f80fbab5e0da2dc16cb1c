@@ -1,0 +1,5 @@
+
+Tsquid:S1197"8Move the array designator from the variable to the type.(ùï¾Žÿÿÿÿÿ
+Tsquid:UselessImportCheck"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
+gsquid:CommentedOutCodeLineF"<This block of commented-out lines of code should be removed.(ª©Ý¾øÿÿÿÿ
+¢%squid:RedundantThrowsDeclarationCheck"lRemove the declaration of thrown exception 'java.lang.Exception', as it cannot be thrown from method's body.(ùï¾Žÿÿÿÿÿ

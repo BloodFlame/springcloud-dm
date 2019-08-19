@@ -1,0 +1,34 @@
+server:
+  port: 7400
+spring:
+  application:
+    name: dm-order-consumer
+  rabbitmq:
+    host: 192.168.9.151
+    port: 5672
+    username: guest
+    password: guest
+  redis:
+    database: 0
+    host: 192.168.9.151
+    port: 6379
+    password: 123456
+    timeout: 3000
+  kafka:
+    producer:
+      retries: 0
+      #batch-size: 16384
+      bootstrap-servers: 192.168.9.151:9092
+      buffer-memory: 33554432
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    listener:
+      poll-timeout: 10000
+  sleuth:
+    sampler:
+      percentage: 1.0
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7776/eureka/
+moduleName: dm-order-consumer

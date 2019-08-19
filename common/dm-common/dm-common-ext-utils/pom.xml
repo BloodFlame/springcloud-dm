@@ -1,0 +1,88 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>dm-common</artifactId>
+        <groupId>cn.dm</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>dm-common-ext-utils</artifactId>
+    <packaging>jar</packaging>
+
+    <name>dm-common-ext-utils</name>
+    <url>http://maven.apache.org</url>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <url>http://nexus.local.com/content/repositories/thirdparty</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://nexus.local.com/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>cz.mallat.uasparser</groupId>
+            <artifactId>uasparser</artifactId>
+            <version>0.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
+            <version>1.4.5.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-activemq</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>jms</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.dm</groupId>
+            <artifactId>dm-common-dto</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-amqp</artifactId>
+            <version>RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.dm</groupId>
+            <artifactId>dm-common-utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>jms</artifactId>
+            <version>1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-redis</artifactId>
+            <version>1.4.5.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>redis.clients</groupId>
+            <artifactId>jedis</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+    </dependencies>
+</project>

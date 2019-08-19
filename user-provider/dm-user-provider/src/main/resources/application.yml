@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    url: jdbc:mysql://192.168.9.151:3306/dm_user?useUnicode=true&characterEncoding=gbk&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  application:
+    name: dm-user-provider
+  rabbitmq:
+    host: 192.168.9.151
+    port: 5672
+    username: guest
+    password: guest
+  redis:
+    database: 0
+    host: 192.168.9.151
+    port: 6379
+    password: 123456
+    timeout: 3000
+  sleuth:
+    sampler:
+      percentage: 1.0
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:7776/eureka/
+moduleName: dm-user-provider
+server:
+  port: 7011
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
